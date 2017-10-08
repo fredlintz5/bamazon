@@ -1,5 +1,4 @@
-let AsciiTable = require('ascii-table');
-
+const AsciiTable = require('ascii-table');
 const mysql = require('mysql');
 const colors = require('colors');
 const inquirer = require('inquirer');
