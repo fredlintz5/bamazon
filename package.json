@@ -1,0 +1,27 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Amazon-esque Command Line Application",
+  "main": "bamazon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredlintz5/bamazon.git"
+  },
+  "author": "Fred Lintz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredlintz5/bamazon/issues"
+  },
+  "homepage": "https://github.com/fredlintz5/bamazon#readme",
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "cli-table": "^0.3.1",
+    "colors": "^1.1.2",
+    "inquirer": "^3.3.0",
+    "mysql": "^2.15.0",
+    "table": "^4.0.2"
+  }
+}
