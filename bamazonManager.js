@@ -73,12 +73,12 @@ function restart() {
 
 function readDataTable(db_table) {
 	let table = new AsciiTable();
-	table.setHeading('ID', 'Description', 'Department', 'Price', 'Quantity');
+	table.setHeading('ID', 'Description', 'Department', 'Price', 'Quantity', 'Total Sales');
 
 	connection.query(`SELECT * FROM ${db_table}`, (err,res) => {
 		console.log(`\n                  Current Product List`.cyan);
 		res.forEach((product) => {
-			table.addRow(product.id, product.description, product.department, product.price, product.quantity);
+			table.addRow(product.id, product.description, product.department, product.price, product.quantity, product.product_sales);
 		})
 		console.log(`${table.toString()}\n`);
 	});

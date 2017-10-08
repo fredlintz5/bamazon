@@ -61,18 +61,20 @@ function itemPicked(id, qty) {
 		} else {
 			if (qty == 1) {
 				console.log(`\nYou have selected ${qty} ${res[0].description} for $${res[0].price}.`.green);
-				console.log(`Your total amount due is: $${qty*res[0].price}\n.`);
-				buyItem(id, res[0].quantity, qty);
+				let total = qty*res[0].price;
+				console.log(`Your total amount due is: $${total}.\n`);
+				buyItem(id, res[0].quantity, qty, total);
 			} else if (qty > 1) {
 				console.log(`\nYou have selected ${qty} ${res[0].description} for $${res[0].price} each.`.green);
-				console.log(`Your total amount due is: $${qty*res[0].price}\n.`);
-				buyItem(id, res[0].quantity, qty);
+				let total = qty*res[0].price;
+				console.log(`Your total amount due is: $${total}.\n`);
+				buyItem(id, res[0].quantity, qty, total);
 			}
 		}
 	});
 }
 
-function buyItem(id, itemQty, customerQty) {
+function buyItem(id, itemQty, customerQty, total) {
 	let newQty = itemQty - customerQty;
 	inquirer.prompt([
 	{
@@ -88,7 +90,7 @@ function buyItem(id, itemQty, customerQty) {
 	]).then((ans) => {
 		if (ans.confirm) {
 			console.log(`\nCongratulations on your new item.\n`.green);
-			updateDataQTY(id, newQty);
+			updateDataQTY(id, newQty, total);
 			setTimeout(restart, 1000);
 		} else {
 			console.log(`\nOooops.\n`.green);
@@ -117,8 +119,8 @@ function restart() {
 }
 
 
-function updateDataQTY(id, qty) {
-	connection.query(`UPDATE products SET quantity = ${qty} WHERE id = ${id}`, (err, res) => {
+function updateDataQTY(id, qty, total) {
+	connection.query(`UPDATE products SET quantity=${qty}, product_sales=product_sales+${total} WHERE id=${id}`, (err, res) => {
 		if (err) throw err;
 	})
 }

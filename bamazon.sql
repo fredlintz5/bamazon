@@ -13,6 +13,14 @@ CREATE TABLE products(
 );
 
 
+CREATE TABLE departments(
+	department_id INT(11) NOT NULL,
+	department_name VARCHAR(30) NOT NULL,
+	over_head_costs INT(11) NOT NULL,
+	PRIMARY KEY (department_id)
+);
+
+
 INSERT INTO products (description, department, price, quantity)
 VALUE 
 ('Trek Marlin 4', 'Bicycles', 399.99, 3), 
