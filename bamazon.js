@@ -74,6 +74,7 @@ function itemPicked(id, qty) {
 	});
 }
 
+
 function buyItem(id, itemQty, customerQty, total) {
 	let newQty = itemQty - customerQty;
 	inquirer.prompt([
@@ -97,7 +98,6 @@ function buyItem(id, itemQty, customerQty, total) {
 			restart();
 		}
 	})
-
 }
 
 
