@@ -16,7 +16,7 @@ The app has two different login points:
 
 * `node bamazon.js` - for customer' to login and see available items to purchase and choose what item and how many they want. See below...
 
-https://media.giphy.com/media/3o7aDcoYT3aHWd27Qc/giphy.gif
+![bamazon.js in action example](https://media.giphy.com/media/3o7aDcoYT3aHWd27Qc/giphy.gif)
 
 
 <insert GIFS here>
