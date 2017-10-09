@@ -20,7 +20,7 @@ function startManagerApp() {
 		name: 'choice',
 		message: 'Choose your Query:',
 		type: 'list',
-		choices: ['View Products for Sale','View Low Inventory', 'Update Inventory','Add New Product', 'QUIT']
+		choices: ['View Products for Sale','View Low Inventory', 'Update Product','Add New Product', 'QUIT']
 	}
 	]).then((ans) => {
 		switch(ans.choice) {
@@ -33,7 +33,7 @@ function startManagerApp() {
 				readDataLowInventory('products');
 				break;
 
-			case 'Update Inventory':
+			case 'Update Product':
 				readDataTable('products');
 				setTimeout(updateInventory, 700);
 				break;
