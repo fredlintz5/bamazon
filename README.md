@@ -23,14 +23,17 @@ The app has two different login points:
 
 
 1.View Inventory and View Inventory Below 5 Command Line Options:
+
 ![bamazonManager.js in action gif](https://media.giphy.com/media/l378lpZ99QdZn3jfq/giphy.gif)
 
 
 2.Update Product Command Line Option:
+
 ![bamazonManager.js in action gif](https://media.giphy.com/media/3ov9kb9wM2NTcgyc0w/giphy.gif)
 
 
 3.Add Product Command Line Option:
+
 ![bamazonManager.js in action gif](https://media.giphy.com/media/3ov9jEIUbHfIuyoWcg/giphy.gif)
 
 
