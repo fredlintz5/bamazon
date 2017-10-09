@@ -4,7 +4,7 @@
 
 ---
 
-Node.js & MySQL
+`Node.js & SequelPro`
 
 Overview
 
