@@ -1,6 +1,7 @@
 <h1>Bamazon</h1>
 
 <h3>A command line Amazon-Esque shopping program</h3>
+
 ---
 
 Node.js & MySQL
