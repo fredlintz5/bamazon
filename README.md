@@ -14,12 +14,12 @@ In this project, I created an Amazon-like storefront using SequelPro, Node.js, &
 
 The app has two different login points:
 
-* `node bamazon.js` - for customer' to login and see available items to purchase and choose what item and how many they want. See below...
+* `node bamazon.js` - Customer' login to see available items for purchase and to choose what item and how many they want. See below...
 
 ![bamazon.js in action gif](https://media.giphy.com/media/3o7aDcoYT3aHWd27Qc/giphy.gif)
 
 
-* `node bamazonManager.js` - for manager's to login and see sales history, current inventory levels, and adds the ability to add product, or update existing product. See below...
+* `node bamazonManager.js` - Manager's login to view sales history, current inventory levels, and adds the ability to add product, or update existing product. See below...
 
 
 1.View Inventory and View Low Inventory:
